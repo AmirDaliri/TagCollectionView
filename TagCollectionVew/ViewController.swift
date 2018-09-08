@@ -14,6 +14,11 @@ class ViewController: UIViewController {
     
     var carsCompanies = ["Nissan","Toyota","Chrysler","Honda","Buick","Chevrolet","Dodge","Mercedes Benz","Volvo","Volkswagen","BMW","Lexus","Mazda","Alfa Romeo","Aston Martin","Audi","Bentley","Bugatti","Ferrari","Fiat","Jeep","Hyundai","Maserati","Mini","Kia","Lamborghini"]
     
+    
+    var screenSize: CGRect!
+    var screenWidth: CGFloat!
+    var screenHeight: CGFloat!
+    
     //MARK: - View lifecycle
     
     override func viewDidLoad() {
@@ -21,6 +26,22 @@ class ViewController: UIViewController {
         
         let nib = UINib(nibName: "TagCollectionViewCell", bundle: nil)
         collectionView.register(nib, forCellWithReuseIdentifier: "TagCell")
+        setupLayout()
+    }
+    
+    // MARK: - setup Custom Layout
+    
+    func setupLayout() {
+        screenSize = UIScreen.main.bounds
+        screenWidth = screenSize.width
+        screenHeight = screenSize.height
+        
+        let layout: UICollectionViewFlowLayout = UICollectionViewFlowLayout()
+        layout.sectionInset = UIEdgeInsets(top: 20, left: 0, bottom: 10, right: 0)
+        layout.itemSize = CGSize(width: screenWidth/3, height: screenWidth/3)
+        layout.minimumInteritemSpacing = 0
+        layout.minimumLineSpacing = 0
+        collectionView!.collectionViewLayout = layout
     }
 }
 
