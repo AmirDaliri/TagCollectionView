@@ -16,10 +16,9 @@ class TagCollectionViewCell: UICollectionViewCell {
     func config(name : String) {
         
         label.text = name
-        //label.sizeToFit()
         
         label.layer.borderWidth = 2
-        label.layer.borderColor = UIColor.gray.cgColor
+        label.layer.borderColor = UIColor.white.cgColor
         label.font = UIFont.systemFont(ofSize: 16)
         label.layer.cornerRadius = 20
         label.layer.masksToBounds = true
