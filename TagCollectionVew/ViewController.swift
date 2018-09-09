@@ -8,7 +8,17 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, TagCellLayoutDelegate {
+    
+    func tagCellLayoutTagSize(layout: TagCellLayout, atIndex index: Int) -> CGSize {
+        
+        let label = UILabel(frame: CGRect(x: 0, y: 0, width: 90, height: 45))
+        label.text = carsCompanies[index]
+        label.font = UIFont.systemFont(ofSize: 15)
+        label.sizeToFit()
+        return CGSize(width: label.frame.width + 40, height: 40)
+    }
+    
     
     @IBOutlet weak var collectionView: UICollectionView!
     
@@ -26,7 +36,10 @@ class ViewController: UIViewController {
         
         let nib = UINib(nibName: "TagCollectionViewCell", bundle: nil)
         collectionView.register(nib, forCellWithReuseIdentifier: "TagCell")
-        setupLayout()
+        //setupLayout()
+        
+        let tagCellLayout = TagCellLayout(alignment: .right, delegate: self)
+        collectionView?.collectionViewLayout = tagCellLayout
     }
     
     // MARK: - setup Custom Layout

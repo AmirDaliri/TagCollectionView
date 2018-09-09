@@ -14,6 +14,10 @@
 		110484972143EA270001E75F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 110484952143EA270001E75F /* LaunchScreen.storyboard */; };
 		110484A72143F7C90001E75F /* TagCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 110484A52143F7C90001E75F /* TagCollectionViewCell.swift */; };
 		110484A82143F7C90001E75F /* TagCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 110484A62143F7C90001E75F /* TagCollectionViewCell.xib */; };
+		118B7B412144F2770097111D /* TagCellLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 118B7B402144F2770097111D /* TagCellLayout.swift */; };
+		118B7B432144F8760097111D /* LayoutAlignment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 118B7B422144F8760097111D /* LayoutAlignment.swift */; };
+		118B7B452144F8990097111D /* TagCellLayoutDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 118B7B442144F8990097111D /* TagCellLayoutDelegate.swift */; };
+		118B7B472144F8A00097111D /* LayoutInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 118B7B462144F8A00097111D /* LayoutInfo.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +30,10 @@
 		110484982143EA270001E75F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		110484A52143F7C90001E75F /* TagCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagCollectionViewCell.swift; sourceTree = "<group>"; };
 		110484A62143F7C90001E75F /* TagCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TagCollectionViewCell.xib; sourceTree = "<group>"; };
+		118B7B402144F2770097111D /* TagCellLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagCellLayout.swift; sourceTree = "<group>"; };
+		118B7B422144F8760097111D /* LayoutAlignment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LayoutAlignment.swift; sourceTree = "<group>"; };
+		118B7B442144F8990097111D /* TagCellLayoutDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TagCellLayoutDelegate.swift; sourceTree = "<group>"; };
+		118B7B462144F8A00097111D /* LayoutInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LayoutInfo.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +73,10 @@
 				110484932143EA270001E75F /* Assets.xcassets */,
 				110484952143EA270001E75F /* LaunchScreen.storyboard */,
 				110484982143EA270001E75F /* Info.plist */,
+				118B7B402144F2770097111D /* TagCellLayout.swift */,
+				118B7B422144F8760097111D /* LayoutAlignment.swift */,
+				118B7B442144F8990097111D /* TagCellLayoutDelegate.swift */,
+				118B7B462144F8A00097111D /* LayoutInfo.swift */,
 			);
 			path = TagCollectionVew;
 			sourceTree = "<group>";
@@ -150,8 +162,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				118B7B412144F2770097111D /* TagCellLayout.swift in Sources */,
+				118B7B452144F8990097111D /* TagCellLayoutDelegate.swift in Sources */,
+				118B7B472144F8A00097111D /* LayoutInfo.swift in Sources */,
 				110484A72143F7C90001E75F /* TagCollectionViewCell.swift in Sources */,
 				1104848F2143EA270001E75F /* ViewController.swift in Sources */,
+				118B7B432144F8760097111D /* LayoutAlignment.swift in Sources */,
 				1104848D2143EA270001E75F /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
